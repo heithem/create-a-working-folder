@@ -1,0 +1,22 @@
+Const ForReading = 1, ForWriting = 2
+  Set WshShell = WScript.CreateObject("WScript.Shell")
+   Dim fso, f
+   	Set fso = CreateObject("Scripting.FileSystemObject")
+    Set fs = CreateObject("Scripting.FileSystemObject" ) 
+	fs.CreateFolder ("D:/Heithem" )
+	fs.CreateFolder ("D:/Heithem/css" )
+	Set f = fso.OpenTextFile("D:/Heithem/css/style.css", ForWriting,true)
+	fs.CreateFolder ("D:/Heithem/js" )
+	Set f = fso.OpenTextFile("D:/Heithem/js/jquiry.js", ForWriting,true)
+	fs.CreateFolder ("D:/Heithem/images" )
+	Set f = fso.OpenTextFile("D:/Heithem/index.html", ForWriting,true)
+   	f.writeline("<!DOCTYPE HTML>")
+   	f.writeline("<html>")
+   	f.writeline("<head>")
+   	f.writeline("<meta charset='utf-8'>")
+   	f.writeline("<title>Motivation website</title")
+   	f.writeline("<link rel='stylesheet' type='text/css' href='style/style.css'>")
+   	f.writeline("</head>")
+   	f.writeline("<body></body>")
+   	f.writeline("</html> ")
+  
