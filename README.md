@@ -1,2 +1,2 @@
-create a working folder
+create a working folder with vbscript 
 =======
